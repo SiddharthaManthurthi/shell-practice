@@ -4,11 +4,12 @@ USERID=$(id -u)
 if [ $USERID -ne 0 ]; then
   echo " Please run this script with root user access"
   exit 1
-  
-echo "intalling nginx web server"
-dnf install nginxx -y
+fi
 
-if($? -ne 0); then
+echo "intalling nginx web server"
+dnf install nginx -y
+
+if [ $? -ne 0 ]; then
   echo "nginx installation failed"
   exit 1
 else
