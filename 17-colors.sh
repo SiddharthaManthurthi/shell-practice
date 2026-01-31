@@ -17,10 +17,10 @@ mkdir -p $LOGS_FOLDER
 
 VALIDATE () {
    if [ $1 -ne 0 ]; then
-      echo -e"$R $2 installation failed $N" | tee -a $LOGS_FILE
+      echo -e "$R $2 installation failed $N" | tee -a $LOGS_FILE
       exit 1
     else
-        echo -e"$G $2 installation successful $N"
+        echo -e "$G $2 installation successful $N"
     fi
 }
 
@@ -32,7 +32,7 @@ do
      dnf install $package -y &>> $LOGS_FILE
      VALIDATE $? "$package Installation"
    else
-        echo -e"$Y $package is already installed, skipping $N"
+        echo -e "$Y $package is already installed, skipping $N"
     fi
 
 done
