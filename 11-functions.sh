@@ -15,7 +15,7 @@ else
 fi
 }
 
-echo "intalling nginxx web server"
+echo "intalling ngignxx web server"
 dnf install nginx -y
 
 VALIDATE $? "nginx Installation"
