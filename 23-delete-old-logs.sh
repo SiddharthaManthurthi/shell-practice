@@ -8,7 +8,7 @@ B="\e[0m"
 LOGS_DIR=/home/ec2-user/app-logs
 LOGS_FILE="$LOGS_DIR/$0.log"
 
-IF [ ! -d $LOGS_DIR ]; then
+IF [! -d $LOGS_DIR ]; then
  echo -e "$R $LOGS_DIR does not exist $N"
  exit 1
 fi  
