@@ -7,3 +7,7 @@ do
     #increment the count
     ((count++))
 done
+
+while IFS= read -r line;do
+    echo "Line Content: $line"
+done < ./21-script.sh #input which file to read line by line
