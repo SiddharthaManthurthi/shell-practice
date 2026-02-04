@@ -71,7 +71,7 @@ else
     echo "deleted file: $filepath"
     done <<< $FILES
   else
-    log " Archeival is ....$G FAILURE $N"
+    log " Archeival is ....$R FAILURE $N"
     exit 1
   fi
 fi
