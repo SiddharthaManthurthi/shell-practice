@@ -70,10 +70,6 @@ else
     rm -f "$filepath"
     echo "deleted file: $filepath"
     done <<< $FILES
-
-done <<< "$FILES_TO_DELETE"
-    
-
   else
     log " Archeival is ....$G FAILURE $N"
     exit 1
