@@ -16,8 +16,8 @@ fi
 mkdir -p $LOGS_FOLDER
 
 USAGE(){
-    echo -e "$R USAGE:: sudo backup <SOURCE_DIR> <DEST_DIR> <DAYS> [default 14 days] $N"
-    exist 1
+  echo -e "$R USAGE:: sudo backup <SOURCE_DIR> <DEST_DIR> <DAYS> [default 14 days] $N"
+  exist 1
 }
 
 if [ $# -lt 2 ]; then
