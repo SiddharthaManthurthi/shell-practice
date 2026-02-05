@@ -20,7 +20,7 @@ do
  PARTITION=$(df -hT | grep -v Filesystem |awk '{print $7}' | cut -d "%" -f1)
 
   if [$USAGE -gt $USAGE_THRESHOLD] then
-      MESSAGE+="High Disk usage on $PARTITION:$USAGE"
+    MESSAGE+="High Disk usage on $PARTITION:$USAGE"
   fi
 
 
