@@ -6,7 +6,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 MESSAGE=""
-IP_ADDRESS=$(curl curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/local-ipv4)
+IP_ADDRESS=$(curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/local-ipv4)
 
 log(){
   echo -e "$(date '+%Y-%m-%d %H:%M:%S') :: | $1" | tee -a $LOGS_FILE
